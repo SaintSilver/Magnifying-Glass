@@ -30,7 +30,7 @@ $(function () {
 			/* 이미지에 대한 마우스 포인터 아래의 픽셀 비율(본래 이미지 크기에 대한)을 얻고 
 			이를 사용하여 돋보기 내부에 큰 이미지를 배치한다. */
 			var rx = -(mouseX / target.width() * target[0].naturalWidth - magnifier.width() / 2);
-			var ry = -(mouseY / target.height() * target[0].naturalHeight - magnifier.height());
+			var ry = -(mouseY / target.height() * target[0].naturalHeight - magnifier.height() / 2);
 
 			//돋보기를 마우스 위치에 따라 움직인다.
 			//돋보기의 width, height 절반을 마우스 좌표에서 차감해 마우스와 돋보기 위치를 일치시킨다.
