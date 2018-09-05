@@ -2,7 +2,7 @@
 $(function () {
 
 	$(".wrap")
-		.on('mousemove', magnifier)
+		.on('mousemove', magnify)
 		.prepend("<div class='magnifier'></div>")
 		.children('.magnifier').css({
 			"background": "url('" + $(".target").attr("src") + "') no-repeat"
@@ -11,7 +11,7 @@ $(function () {
 	var target = $('.target');
 	var magnifier = $('.magnifier');
 
-	function magnifier(e) {
+	function magnify(e) {
 
 		// 마우스 위치에서 .magnify의 위치를 차감해 컨테이너에 대한 마우스 좌표를 얻는다.
 		var mouseX = e.pageX - $(this).offset().left;
